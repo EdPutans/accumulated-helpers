@@ -1,0 +1,23 @@
+{
+  "name": "accumulated-helpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/edputans/accumulated-helpers",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ed putans",
+    "types",
+    "helpers",
+    "guards",
+    "accumulated"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edputans/accumulated-helpers.git"
+  },
+  "author": "Ed Putans <edputans@gmail.com>",
+  "license": "ISC"
+}
