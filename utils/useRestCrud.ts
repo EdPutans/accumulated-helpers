@@ -105,9 +105,9 @@ function useRestCrud<I extends unknown = any>(
     post,
     patch,
     replace,
-    remove
+    remove,
+    put,
   };
 }
 export default useRestCrud;
-// const { getAll, post } = useRestCrud<{ id: 1 }>('test');
 
