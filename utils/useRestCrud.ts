@@ -4,6 +4,13 @@
  * This may change in the future
  */
 
+/**
+ * @Usage
+ * In your React component, use the hook like this:
+ * const { getAll } = useRestCrud("http://url-of-my-api-here.com/cats");
+ */
+
+
 export type UseRestCrudOptions = {
   headers?: HeadersInit
   // more customisation to be added?
