@@ -1,5 +1,3 @@
-import useRestCrud from './useRestCrud';
+import createRestCrud from "./createRestCrud";
 
-export {
-  useRestCrud
-}
+export { createRestCrud };

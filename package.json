@@ -1,6 +1,6 @@
 {
   "name": "accumulated-helpers",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Helpers and typeguards and other useful stuff Ed has accumulated for personal use",
   "type": "module",
   "main": "index.js",
