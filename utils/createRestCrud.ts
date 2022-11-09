@@ -16,9 +16,8 @@
  * proper error handling
  * endpoint on a per-route basis
  * add support for more ID types
- * hooks! 🦈
- * --possibly-- convert into a class for better readability and constructor 🤷🏻‍♂️
- * allow passing put / delete as an option in the config stage
+ * add a shouldCatch option
+ * hooks! 🦈 OR  --possibly-- convert into a class for better readability and constructor 🤷🏻‍♂️
  * more customisation to be added as time progresses 💜
  */
 
@@ -53,7 +52,7 @@ function slapIdOnTop(endpoint: string, id: Id): string {
 }
 
 /*
- * Adds an Id to the endpoint after checking if the / is present at the end
+ * Adds query params to the endpoint after checking if the / is present at the end. Returns full string
  */
 function slapQueryParamsOnTop(
   endpoint: string,
@@ -74,6 +73,10 @@ function slapQueryParamsOnTop(
 function defaultDataGetter<T>(respBody: unknown): T {
   return respBody as T;
 }
+/**
+ *
+ * Default error handler, if one isn't provided
+ */
 function defaultOnError(err: unknown) {
   console.error(err);
 }
