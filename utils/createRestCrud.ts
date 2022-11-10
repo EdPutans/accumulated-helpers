@@ -132,8 +132,11 @@ function createRestCrud<T extends unknown = any>(
   const getters = constructGetters();
   const handleError = options.onError ?? defaultOnError;
 
-  async function getAll(callback?: (data: T[]) => any): Promise<T[]> {
-    const result: T[] = await fetch(slapQueryParamsOnTop(endpoint))
+  async function getAll(
+    queryParams?: string[],
+    callback?: (data: T[]) => any
+  ): Promise<T[]> {
+    const result: T[] = await fetch(slapQueryParamsOnTop(endpoint, queryParams))
       .then((r) => r.json())
       .then(getters.getAll)
       .catch(handleError);
