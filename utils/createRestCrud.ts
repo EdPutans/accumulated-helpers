@@ -203,7 +203,7 @@ function createRestCrud<T extends unknown = any>(
   const patch = (id: Id, body: Partial<T>, callback?: (data: T) => any) =>
     edit(id, body, "PATCH", callback);
 
-  const replace = (id: Id, body: Partial<T>, callback?: (data: T) => any) =>
+  const put = (id: Id, body: Partial<T>, callback?: (data: T) => any) =>
     edit(id, body, "PUT", callback);
 
   async function remove(id: Id, callback?: (data: unknown) => any) {
@@ -223,11 +223,11 @@ function createRestCrud<T extends unknown = any>(
     getSingle,
     post,
     patch,
-    replace,
+    put,
     remove,
     // aliases:
     delete: remove,
-    put: replace,
+    replace: put,
   };
 }
 
