@@ -1,6 +1,6 @@
 /**
  * @description
- * A big boy helper function that eleminates some fetch boilerplate\
+ * A big boy helper function that eleminates some fetch boilerplate
  * by returning all basic methods for a simple REST CRUD, along with some customizability
  */
 
